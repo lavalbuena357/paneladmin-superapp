@@ -1,0 +1,26 @@
+.parent_div{
+  background-color: #e6e6e6;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.dashboard_inner {
+  height: 100%;
+  display: flex;
+}
+
+.dashboard_inner_2 {
+  position: relative;
+  width: 100%;
+}
+
+.dashboard_inner_3 {
+  height: 90%;
+}
+
+.custom_scroll_y {
+  overflow-y: auto;
+}
