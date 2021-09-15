@@ -1,0 +1,65 @@
+.login_div {
+  background-color: white;
+}
+
+.login_div img {
+  width: 65%;
+  margin: auto;
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.login_title {
+  font-size: 14px; 
+  font-weight: 600;
+  color: #92BEE4;
+  text-align: center;
+}
+
+a, h6, label, legend { 
+  font-size: 14px; 
+}
+
+a {
+  color:#1FAEEF;
+  margin: auto 0;
+  text-decoration: none;
+}
+
+.icon_show_pass {
+  position: absolute;
+  right: 10px;
+  top: 30%; 
+  font-size: 18px; 
+  color: #1FAEEF;
+  cursor: pointer;
+}
+
+.btn_disabled {
+  display: block;
+  margin-left: auto;
+  border-radius: 20px;
+  border: 0;
+  padding: 0 1rem;
+  font-size: 14px;
+  height: 41px;
+  color: #B0B0B0 !important;
+  background-color: #E0E1E2 !important;
+}
+
+.btn_login {
+  margin-left: auto;
+  display: block;
+  font-size: 14px;
+  width: 102px;
+  height: 41px;
+  background: transparent linear-gradient(180deg, #1FAEEF 0%, #105778 100%) 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  border: 0;
+  opacity: 1;
+}
+
+.form_basic_email, .form_basic_contra {
+  font-weight: 800;
+}
