@@ -3,7 +3,7 @@ import style from './EditarUsuario.module.css'
 
 function EditarUsuario() {
   return (
-    <div>
+    <div className={style.ctn}>
       Editar Usuario
     </div>
   )

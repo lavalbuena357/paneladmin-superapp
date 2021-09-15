@@ -51,7 +51,7 @@ function Login({ auth, admins }) {
       })
     }
 
-    if(currentU[0].estado == 0) {
+    if(currentU[0].estado === '0') {
       return setMessage({
         msg: 'El usuario se encuentra bloqueado. Demasiados intentos fallidos',
         heading: 'Error',

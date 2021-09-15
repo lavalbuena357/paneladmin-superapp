@@ -3,7 +3,8 @@ import { connect } from 'react-redux'
 import { Button } from 'react-bootstrap'
 import { getUsers } from '../../../redux/actions'
 import { useHistory } from 'react-router'
-import { BsPencilSquare, BsFillEyeFill } from "react-icons/bs"
+import { BsPencil, BsSearch } from "react-icons/bs"
+import style from './Usuarios.module.css'
 
 function Usuarios({getUsers, all_users}) {
 
@@ -34,13 +35,13 @@ function Usuarios({getUsers, all_users}) {
   return (
     <div>
       <Button
-        className='btn-clap btn btn-primary mt-4 mb-4'
+        className={`${style.btn_crear_usuario} btn btn-primary mt-4 mb-4`}
         variant="primary"
         type="submit"
         onClick={() => handleCreateUser('/inicio/crear-usuario')}
       >Crear Usuario</Button>
 
-<table className='table'>
+      <table className='table'>
         <thead>
           <tr>
             <th scope="col" >ID</th>
@@ -59,11 +60,11 @@ function Usuarios({getUsers, all_users}) {
               <tr key={i}>
                 <td >{u.id}</td>
                 <td >{u.data ? u.data.perfil : 'Ciudadano'}</td>
-                <td >{u.estado == '1' || !u.estado ? 'Activo' : 'Bloqueado'}</td>
+                <td >{u.estado === '1' || !u.estado ? 'Activo' : 'Inactivo'}</td>
                 <td >{u.nombres + ' ' + u.apellidos}</td>
                 <td >{u.correo}</td>
-                <td ><BsFillEyeFill onClick={() => handleViewUser('/inicio/ver-usuario', i)} /></td>
-                <td ><BsPencilSquare onClick={() => handleEditUser('/inicio/editar-usuario', i)} /></td>
+                <td ><BsSearch onClick={() => handleViewUser('/inicio/ver-usuario', i)} /></td>
+                <td ><BsPencil onClick={() => handleEditUser('/inicio/editar-usuario', i)} /></td>
               </tr>
             ))
             :

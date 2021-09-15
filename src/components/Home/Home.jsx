@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import Login from '../Login/Login'
 import bg_login from '../../assets/img/img-login-superapp.jpg'
 import style from './Home.module.css'
-import DashBoard from '../DashBoard/DashBoard'
+// import DashBoard from '../DashBoard/DashBoard'
 
 function Home() {
 
