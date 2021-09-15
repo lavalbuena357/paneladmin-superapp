@@ -1,0 +1,44 @@
+.nav_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  height: 57px;
+  box-shadow: 0 4px 4px lightgrey;
+  z-index: 1;
+}
+
+.vertic_separator_1, .vertic_separator_2 {
+  width: 2px;
+  height: 35px;
+  background-color: #d9d9d9;
+  margin: auto 13px;
+}
+
+.project_name {
+  font-size: 24px;
+  font-weight: 900;
+  color: #1faeef;
+  margin: auto;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+
+.user_elements {
+  display: flex;
+  align-items: center;
+}
+
+.user_elements img {
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #1faeef;
+  margin-left: 2rem;
+}
