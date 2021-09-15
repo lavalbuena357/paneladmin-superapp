@@ -2,6 +2,7 @@ import axios from "axios"
 export const AUTH = 'AUTH'
 export const GET_USERS = 'GET_USERS'
 export const GET_USER = 'GET_USER'
+export const CREATE_USER = 'CREATE_USER'
 
 export function auth() {
   return async function(dispatch) {
@@ -34,6 +35,18 @@ export function getUser(id) {
       dispatch({
         type: GET_USER,
         payload: user.data
+      })
+    } catch (error) {console.log(error)}
+  }
+}
+
+export function createUser(payload) {
+  return async function(dispatch) {
+    try {
+      await axios.post('http://localhost:3001/usuario', payload)
+      dispatch({
+        type: CREATE_USER,
+        payload: payload
       })
     } catch (error) {console.log(error)}
   }
