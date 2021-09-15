@@ -10,18 +10,6 @@ function Main() {
 
   const history = useHistory()
 
-  function hideBottomEls(){
-
-  }
-
-  function onEnterCol() {
-
-  }
-
-  function onLeaveCol() {
-
-  }
-
   return (
     <div style={{display:'flex'}}>
       <div className={style.dashb_main_div}>
@@ -31,7 +19,7 @@ function Main() {
         <br/> a los diferentes módulos y acciones disponibles en la <strong>Super App</strong>.</p><br/>
 
         <div>
-          <div className={style.dashb_main_div_2} onMouseLeave={hideBottomEls}>
+          <div className={style.dashb_main_div_2}>
             <div className={style.icons}>
 
               {/* SECCION USUARIOS */}
