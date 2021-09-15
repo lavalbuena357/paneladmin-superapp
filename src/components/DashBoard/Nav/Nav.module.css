@@ -10,19 +10,24 @@
   z-index: 1;
 }
 
-.vertic_separator_1, .vertic_separator_2 {
+.project_name {
+  font-size: 20px;
+  font-weight: 900;
+  color: #1faeef;
+  margin: auto;
+  cursor: pointer;
+}
+
+.vertic_separator {
   width: 2px;
   height: 35px;
   background-color: #d9d9d9;
   margin: auto 13px;
 }
 
-.project_name {
-  font-size: 24px;
-  font-weight: 900;
-  color: #1faeef;
-  margin: auto;
-  cursor: pointer;
+.subtitle {
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .right {

@@ -17,11 +17,11 @@ function Nav({setActive, active}) {
   return (
     <div className={style.nav_1}>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        {/* <div className={style.vertic_separator_1}></div> */}
         <span className={style.project_name} onClick={handleHome}>
-          Admin Panel
+          Super App
         </span>
-        <div className={style.vertic_separator_2}></div>
+        <div className={style.vertic_separator}></div>
+        <span className={style.subtitle}>Panel de Administración</span>
       </div>
 
       <div className={style.right}>
