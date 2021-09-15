@@ -1,0 +1,97 @@
+.dashb_main_div {
+  margin: 5rem auto auto;
+  text-align: center;
+}
+
+.main_title {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.main_description {
+  font-size: 14px;
+}
+
+.dashb_main_div_2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hcp_col {
+  padding: 0;
+  max-width: 180px;
+}
+
+.main_icon {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_icon:hover >  div {
+  width: 140px;
+  height: 140px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_icon:hover ~  h4 {
+  color: #1FAEEF;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_icon:hover ~  .underline {
+  background-color: #1FAEEF;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_icon div {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0 3px 7px lightgray;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_icon div img {
+  height: 90px;
+  margin: auto;
+  display: block;
+}
+
+.hcp_col h4 {
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: 800;
+  user-select: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.hcp_col p {
+  font-size: 12px;
+  margin-top: 1rem;
+  user-select: none;
+  color: rgb(121, 121, 121);
+}
+
+.underline {
+  background-color: #f7f7f7;
+  height: 3px;
+  width: 60%;
+  margin: 15px auto;
+  transition: all 0.3s ease-in-out;
+}
