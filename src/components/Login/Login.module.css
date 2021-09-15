@@ -54,7 +54,7 @@ a {
   font-size: 14px;
   width: 102px;
   height: 41px;
-  background: transparent linear-gradient(180deg, #1FAEEF 0%, #105778 100%) 0% 0% no-repeat padding-box;
+  /* background: transparent linear-gradient(180deg, #1FAEEF 0%, #105778 100%) 0% 0% no-repeat padding-box; */
   border-radius: 20px;
   border: 0;
   opacity: 1;
