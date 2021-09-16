@@ -9,6 +9,7 @@ function Home() {
 
   const history = useHistory()
   const currentUser = JSON.parse(localStorage.getItem('currentUser'))
+  console.log(currentUser)
 
   // localStorage.clear()
   

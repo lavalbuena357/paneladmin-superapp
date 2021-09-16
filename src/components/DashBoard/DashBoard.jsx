@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import style from './DashBoard.module.css'
 import { Route } from "react-router-dom"
+import { useHistory } from 'react-router-dom'
 import LeftPanel from './LeftPanel/LeftPanel'
 import Nav from './Nav/Nav'
 import Main from './Main/Main'
@@ -12,8 +13,12 @@ import CrearUsuario from './Usuarios/CrearUsuario/CrearUsuario'
 function DashBoard() {
   const [active, setActive] = useState('inicio')
 
+  const currentUser = JSON.parse(localStorage.getItem('currentUser'))
+  const history = useHistory()
+
   return (
     <div className={`${style.dashboard} ${style.parent_div}`} style={{ backgroundColor: '#f7f7f7' }}>
+      {currentUser ? 
       <div className={style.dashboard_inner}>
         <LeftPanel setActive={setActive} active={active} />
         <div className={style.dashboard_inner_2}>
@@ -39,6 +44,8 @@ function DashBoard() {
           </div>
         </div>
       </div>
+      : history.push('/')
+      }   
     </div>
   )
 }
